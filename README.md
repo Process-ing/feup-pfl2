@@ -1,5 +1,11 @@
 # Functional and Logical Programming (PFL) Project 2
 
+> Curricular Unit: [Functional and Logic Programming - 2024/25 1S](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=541889)<br>
+> Faculty: [FEUP](https://sigarra.up.pt/feup/en/web_page.Inicial)<br>
+> Professor: [Daniel Castro Silva](https://sigarra.up.pt/feup/en/func_geral.formview?p_codigo=424415)<br>
+> Authors: [Bruno Oliveira](https://github.com/Process-ing), [Rodrigo Silva](https://github.com/racoelhosilva)<br>
+> Final Grade: 19.7/20
+
 ## Game_Group: Replica_7
 
 <figure align="center">
@@ -212,3 +218,10 @@ When it comes to limitations and possible improvements, we have little to point 
 ## References
 
 1. **BoardGameGeek**. *Replica*. Available at: https://boardgamegeek.com/boardgame/427267/replica (accessed January 4, 2025).
+
+## Tips and Tricks (for anyone doing a similar project)
+
+- If you haven't still choose a game for the project, absolutely try to use a relatively simple game. Sometimes, there is a ridiculous difference in difficulty between games and a simple game with good features will be much better evaluated than a complex game with features poorly implemented. Also, more complex games tend to have less efficient AI implementations and more spaghetti code (which in this project is a big throw-off).
+- Using Prolog's conventions is closely taken into account, more specifically, any use of imperative-like features (such as `;`, `->` and `==`) imply automatic deduction of points. Try to avoid them as much as possible. You can, for example, avoid using `;` by using an auxiliary predicate with two clauses.
+- Don't forget to add clear instructions on how to run the game, and be specially rigorous if your game uses ANSI escape sequences, as some terminals may not support them. We had a sweat because we said in ours that you can simply use PowerShell in Windows, but then noticed that it hasn't ANSI support by default only on Windows 11.
+- Even if not required, try to implement extra features, such as variable-sized boards, extra game rules and Minimax AI. Our professor was really keen on the implementation of these features, even though they were not required. That's also why it is best to choose a simple game, since a simple game + extra features is considered better than a complex game with no extra features.
